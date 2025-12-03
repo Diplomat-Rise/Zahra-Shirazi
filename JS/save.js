@@ -38,10 +38,10 @@ function downloadVCard() {
   const vCardData = `
 BEGIN:VCARD
 VERSION:3.0
-FN:MEHRAN SIDDIQUE
-TITLE:ACCOUNTANT
+FN:Zahra Shirazi
+TITLE:SALES MANAGER
 ORG:Business Links
-TEL;TYPE=WORK,VOICE:+971586412055
+TEL;TYPE=WORK,VOICE:+971554121540
 EMAIL:businesslink52@gmail.com
 URL:https://businessdxb.com/
 
@@ -53,7 +53,7 @@ END:VCARD
 
   const a = document.createElement('a');
   a.href = url;
-  a.download = 'MEHRAN SIDDIQUE.vcf';
+  a.download = 'Zahra Shirazi.vcf';
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
@@ -64,4 +64,5 @@ document.querySelector('.save-contact-button').addEventListener('click', functio
   e.preventDefault();
   downloadVCard();
 });
+
 
