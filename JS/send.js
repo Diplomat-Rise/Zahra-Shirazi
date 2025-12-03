@@ -56,7 +56,7 @@ function createContactPopup() {
       `Hi, here are my contact details:\n\nName: ${name}\nPhone: ${phone}\nEmail: ${email}\nMessage: ${userMessage}`
     );
 
-    const recipientNumber = "+971586412055"; // Replace with your WhatsApp number
+    const recipientNumber = "+971554121540"; // Replace with your WhatsApp number
     const whatsappURL = `https://wa.me/${recipientNumber}?text=${message}`;
 
     window.open(whatsappURL, '_blank');
@@ -64,4 +64,5 @@ function createContactPopup() {
 }
 
 document.querySelector('.send-contact-button').addEventListener('click', createContactPopup);
+
 
